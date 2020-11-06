@@ -30,7 +30,7 @@ public class Monetaria extends CuentaBanco{
     }
 
     @Override
-    public double ActualizarSaldo() {
+    public double ActualizarSaldo(double actual) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

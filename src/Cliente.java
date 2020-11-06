@@ -18,8 +18,7 @@ public abstract class Cliente {
     
     abstract public double Debitar(double debito);
     
-    abstract public double ActualizarSaldo();
-    
+    abstract public double ActualizarSaldo(double actual);
     
     
 }
