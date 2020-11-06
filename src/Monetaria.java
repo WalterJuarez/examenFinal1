@@ -7,13 +7,26 @@ public class Monetaria extends CuentaBanco{
 
     
     @Override
-    public double Acreditar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double Acreditar(double credito) {
+        
+        double result = saldo + credito;
+        
+        return result;
     }
 
     @Override
-    public double Debitar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double Debitar(double debito) {
+        int cont = 1;
+        double result = 0;
+        
+        if(cont < 3){
+            cont++;
+            result = saldo - debito;
+        }else{
+            cont = 1;
+            result = saldo - debito -10;
+        }
+        return result;
     }
 
     @Override

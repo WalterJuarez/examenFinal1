@@ -44,6 +44,11 @@ public abstract class CuentaBanco extends Cliente{
         this.nombre = nombre;
     }
 
+    @Override
+    public String toString() {
+        return "CuentaBanco{" + "noCuenta= " + noCuenta + " nombre= "+ nombre +", saldo=" + saldo + '}';
+    }
+
   
     
 }
